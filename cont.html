@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEF CASS CATERING SERVICES</title>
+    <link rel="stylesheet" href="/CSS/new.css">
+    <link rel="stylesheet" href="/CSS/w3.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="/Pictures/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Chef Cass Catering Services - Unforgettable culinary experiences for any occasion.">
+    <script>
+        function checkCookies() {
+            var text = ""
+            if (navigator.cookieEnabled == true) {
+                alert("Cookies Enabled in " + window.location.href)
+            }
+            else {
+                alert("No Cookies here")
+            }
+        }
+        window.location.host();
+    </script>
+</head>
+
+<body>
+
+    <body onload="" class="w3-mobile">
+        <div id="container">
+            <header>
+                <img src="Chefnbg.png" alt="logo" id="logo">
+                <h1 id="mheader">CHEF CASS CATERING SERVICES</h1>
+                <h3>... A real definition of Home Made Cooking...</h3>
+                <button onclick="click1()">Click Me!</button>
+            </header>
+            <nav class="topnav w3-bar w3-mobile w3-teal" >
+                <a href="home.html" id="Home" class="w3-bar-item ">Home</a>
+                <a href="#" class="w3-bar-item w3-hide-small">Order</a>
+                <a href="Bout.html" class="w3-hide-small w3-bar-item">about us</a>
+                <a href="cont.html" class="active w3-bar-item w3-hide-small">Our Contact</a><a href="javascript:void(0)" onclick="myMenu()" class="w3-bar-item w3-right w3-button w3-hide-large w3-hide-medium" >&#9776;</a>
+            </nav>
+
+            <nav id="demo1" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="#" class="w3-bar-item w3-button ">Order</a>
+                <a href="Bout.html" class=" w3-button w3-bar-item ">about us</a>
+                <a href="cont.html" class="active w3-bar-item w3-button">Our Contact</a>
+            </nav>
+            <section id="contact">
+                <h2>Get in Touch</h2>
+                <p>Ready to savor the flavor? Contact us today to discuss your catering needs and let's get started on
+                    crafting
+                    an unforgettable culinary journey!</p>
+                <p id="contact2">Our Contact</p>
+                <p>Tel: 08074871886 OR</p>
+                <p>Email:
+                    <a id="mail" href="mailto:chefcass@gmail.com">chefcass@gmail.com</a>
+                </p>
+                <div id="dte">
+                    <p id="dte"></p>
+                </div>
+            </section>
+            <script>
+                document.getElementById("dte").innerHTML = "@" + dte;
+
+                function myMenu() {
+                    var x = document.getElementById("demo1");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+        </div>
+    </body>
+
+</html>

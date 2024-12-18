@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEF CASS CATERING SERVICES</title>
+    <link rel="stylesheet" href="/CSS/new.css">
+    <link rel="stylesheet" href="/CSS/w3.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="/Pictures/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Chef Cass Catering Services - Unforgettable culinary experiences for any occasion.">
+</head>
+
+<body>
+
+    <body onload="">
+        <div id="container">
+            <header>
+                <img src="Chefnbg.png" alt="logo" id="logo">
+                <h1 id="mheader">CHEF CASS CATERING SERVICES</h1>
+                <h3>... A real definition of Home Made Cooking...</h3>
+                <button onclick="click1()">Click Me!</button>
+            </header>
+            <nav class="topnav w3-bar w3-teal">
+                <a href="home.html" id="Home" class="w3-bar-item ">Home</a>
+                <a href="#" class="w3-bar-item  w3-hide-small">Order</a>
+                <a href="Bout.html" class="active w3-bar-item w3-hide-small">about us</a>
+                <a href="cont.html" class="w3-bar-item  w3-hide-small">Our Contact</a>
+                <a href="javascript:void(0)" onclick="myMenu()" class="w3-bar-item w3-right w3-button w3-hide-large w3-hide-medium" >&#9776;</a>
+            </nav>
+
+            <nav id="demo1" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="#" class="w3-bar-item w3-button ">Order</a>
+                <a href="Bout.html" class="active w3-button w3-bar-item ">about us</a>
+                <a href="cont.html" class="w3-bar-item w3-button">Our Contact</a>
+            </nav>
+            <section id="about" class="w3-card w3-hover-green w3-mobile ">
+                <h2>Our Story</h2>
+                <p>With years of experience in the industry, our founder <strong>Oluwatominiyi Sandra</strong> had a
+                    vision
+                    to
+                    create a catering company that not only serves delicious food but also prioritizes quality,
+                    presentation,
+                    and customer satisfaction. Today, we're proud to be the go-to catering choice for corporate events,
+                    weddings,
+                    parties and most importantly our most esteemed individuals.</p>
+            </section>
+
+            <section id="services" class="w3-card-4 w3-mobile">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Customized menus tailored to your needs</li>
+                    <li>Expert event planning and coordination</li>
+                    <li>Professional staff and timely service</li>
+                    <li>Fresh, locally sourced ingredients</li>
+                    <li>Dietary options to suit every requirement</li>
+                    <li>Amazing home delivery services</li>
+                </ul>
+            </section>
+
+            <section id="promise" class="w3-card-4 w3-mobile">
+                <h2>Our Promise</h2>
+                <p>We promise to deliver mouthwatering cuisine, impeccable service, and unparalleled attention to
+                    detail. Let
+                    us
+                    help you create an unforgettable experience that you and your guests will cherish.</p>
+            </section>
+            <div id="dte">
+                <p id="dte"></p>
+            </div>
+        </div>
+        <script>
+            document.getElementById("dte").innerHTML = "@" + dte;
+           /* function checkCookies() {
+                var text = ""
+                if (navigator.cookieEnabled == true) {
+                    alert("Cookies Enabled in " + window.location.href)
+                }
+                else {
+                    alert("No Cookies here")
+                }
+            }
+            window.location.host();
+/*Dont know why this is not working*/
+            function myMenu() {
+                var x = document.getElementById("demo1");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+        </script>
+    </body>
+
+</html>

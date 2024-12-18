@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEF CASS CATERING SERVICES</title>
+    <link rel="stylesheet" href="/CSS/new.css">
+    <link rel="stylesheet" href="/CSS/w3.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="/Pictures/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Chef Cass Catering Services - Unforgettable culinary experiences for any occasion.">
+    <script>
+        function checkCookies() {
+            var text = ""
+            if (navigator.cookieEnabled == true) {
+                alert("Cookies Enabled in " + window.location.href)
+            }
+            else {
+                alert("No Cookies here")
+            }
+        }
+        window.location.host();
+    </script>
+</head>
+
+<body onload="checkCookies()">
+    <div id="container">
+        <header>
+            <img src="Chefnbg.png" alt="logo" id="logo">
+            <h1 id="mheader">CHEF CASS CATERING SERVICES</h1>
+            <h3>... A real definition of Home Made Cooking...</h3>
+            <button onclick="click1()">Click Me!</button>
+        </header>
+        
+        <nav class="topnav w3-bar w3-teal" >
+            <a href="home.html" id="Home" class="active w3-bar-item">Home</a>
+            <a href="#" class="w3-bar-item w3-hide-small">Order</a>
+            <a href="Bout.html" class="w3-hide-small w3-bar-item">about us</a>
+            <a href="cont.html" class="w3-bar-item w3-hide-small">Our Contact</a><a href="javascript:void(0)" onclick="myMenu()" class="w3-bar-item w3-right w3-button w3-hide-large w3-hide-medium" >&#9776;</a>
+        </nav>
+
+        <nav id="demo1" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button ">Order</a>
+            <a href="Bout.html" class=" w3-button w3-bar-item ">about us</a>
+            <a href="cont.html" class="w3-bar-item w3-button">Our Contact</a>
+        </nav>
+        <section id="intro" style="color: antiquewhite; max-width:500px" class="w3-card4 w3-mobile">
+            <h2 id="welcome">Welcome to Chef Cass Catering Services</h2>
+            <h3>... A real definition of Home Made Cooking...</h3>
+            <p>At <span>Chef Cass Catering Services,</span> we're passionate about crafting unforgettable culinary
+                experiences that delight your taste buds and leave a lasting impression. Our team of skilled chefs and
+                dedicated professionals are committed to providing exceptional catering services for any occasion.</p>
+        </section>
+        <details>
+            <summary>Gallery</summary>
+            <section id="gallery" class="w3-section w3-content">
+                <img src="/Pictures/965f8b701b711caba397e6a0bc559254.jpg" alt="Delicious food 1" class="w3-animate-top">
+                <img src="/Pictures/6e522522e5d5ead4b198e4aeabce896a.jpg" alt="Delicious food 2" class="w3-animate-zoom w3-hover-greyscale">
+                <img src="/Pictures/283a4c9839e816d7f676745eaf113c62.jpg" alt="Delicious food 3" class="w3-animate-left">
+                <img src="/Pictures/04d735875b8f64785d28e9180ad9ee27.jpg" alt="Delicious food 4" class="w3-animate-bottom">
+                <!-- <img src="/Pictures/victoria-shes-PbyfUmiIPB4-unsplash.jpg" alt="Delicious food 5"> -->
+            </section>
+        </details>
+        <div id="dte">
+            <p id="dte"></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("dte").innerHTML = "@" + dte ;
+
+        function myMenu() {
+            var x = document.getElementById("demo1");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>
